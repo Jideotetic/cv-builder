@@ -4,11 +4,13 @@ import Heading from "../components/heading";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 import MobileNav from "../components/mobile-nav";
 import Button from "../components/button";
+import DesktopNav from "../components/desktop-nav";
 export default function Header() {
 	return (
 		<header className="max-w-6xl w-full flex justify-between items-center p-4 bg-white mx-auto fixed left-0 right-0">
 			<Heading />
 
+			{/* MOBILE NAV */}
 			<Popover className="group relative">
 				<PopoverButton className="focus:outline-blue-500 lg:hidden">
 					<MobileMenu />
@@ -21,7 +23,8 @@ export default function Header() {
 				</PopoverPanel>
 			</Popover>
 
-			{/* <NavLinks /> */}
+			{/* DESKTOP NAV */}
+			<DesktopNav />
 			<div className="hidden lg:block">
 				<Button title="Create CV" />
 			</div>
