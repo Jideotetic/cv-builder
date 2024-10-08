@@ -17,7 +17,7 @@ export default function Header() {
 					</PopoverButton>
 					<PopoverPanel
 						transition
-						className="w-full h-[calc(100vh-71px)] fixed top-[70px] left-0 data-[closed]:left-[-999px] bg-gray-200 transition-all duration-300 ease-in-out"
+						className="w-full h-[calc(100vh-71px)] fixed top-[100px] left-0 data-[closed]:left-[-999px] bg-gray-200 transition-all duration-300 ease-in-out"
 					>
 						<MobileNav />
 					</PopoverPanel>
