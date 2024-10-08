@@ -6,7 +6,7 @@ import { CloseButton } from "@headlessui/react";
 export default function MobileNav() {
 	return (
 		<nav className="h-full">
-			<ul className="flex flex-col items-center justify-evenly h-full">
+			<ul className="flex flex-col items-center justify-evenly h-full font-medium text-sm">
 				{NAV_LINKS.map((link, idx) => (
 					<li key={idx}>
 						<CloseButton
