@@ -1,9 +1,10 @@
-import MobileMenu from "../components/mobile-menu";
-import Heading from "../components/heading";
+import MobileMenu from "./mobile-menu";
+import Heading from "./heading";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
-import MobileNav from "../components/mobile-nav";
-import Button from "../components/button";
-import DesktopNav from "../components/desktop-nav";
+import MobileNav from "./mobile-nav";
+import Button from "./button";
+import DesktopNav from "./desktop-nav";
+
 export default function Header() {
 	return (
 		<header className="px-4 py-8 bg-white fixed z-50 left-0 right-0">
