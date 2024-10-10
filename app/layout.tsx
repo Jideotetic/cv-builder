@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "./ui/header/header";
+import Header from "./ui/components/header";
 import Footer from "./ui/components/footer";
 
 const geistSans = localFont({
@@ -27,12 +27,20 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<head>
+				<link rel="shortcut icon" href="/favicon-dark-cv-icon.svg" />
+				<link
+					rel="shortcut icon"
+					href="/favicon-light-cv-icon.svg"
+					media="(prefers-color-scheme: dark)"
+				/>
+			</head>
+			{/* <Favicon /> */}
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col justify-between min-h-screen`}
 			>
 				<Header />
 				{children}
-
 				<Footer />
 			</body>
 		</html>
